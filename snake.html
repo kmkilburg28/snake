@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Snake</title>
+	<style>
+			body {
+				margin-top: 5px;
+				margin-left: 15px;
+			}
+	</style>
+	<script src="./snake.js"></script>
+</head>
+<body>
+
+
+<h1>Snake</h1>
+<div style="display: flex; justify-content: space-between; width: 400px">
+	<div style="margin-bottom: 5px">
+		<button id="startStopButton">Start</button>
+		<button id="turnLeftButton">Turn Left</button>
+		<button id="turnRightButton">Turn Right</button>
+	</div>
+	<div>
+		Length: <span id="lengthHolder">0</span>
+	</div>
+</div>
+
+<canvas id="snakeCanvas" width=400 height=200 style="border: 1px solid"></canvas>
+<script>
+	document.getElementById("startStopButton").addEventListener('click', createGame);
+</script>
+
+</body>
+</html>
